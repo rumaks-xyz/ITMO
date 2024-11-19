@@ -1,6 +1,16 @@
-# Математический Анализ | Лекция 11 | Производная и Дифференциал
-
 ---
+header-includes:
+  - \usepackage{fontspec}
+  - \usepackage{polyglossia}
+  - \setdefaultlanguage{russian}
+  - \setmainfont{Times New Roman}
+  - \newfontfamily\cyrillicfont{Times New Roman}
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+---
+
+
+# Математический Анализ | Лекция 11 | Производная и Дифференциал
 
 ## Оглавление
 
@@ -42,7 +52,7 @@
 
 **Производная функции** в точке характеризует скорость изменения функции в этой точке.
 
-**Определение:** Пусть функция $ f $ определена на промежутке $ (a, b) $, и $ x_0 \in (a, b) $. Производной функции $ f $ в точке $ x_0 $ называется предел (если он существует в $ \overline{\mathbb{R}} $):
+**Определение:** Пусть функция $ f $ определена на промежутке $ (a, b) $, и $ x_0 \in (a, b) $. Производной функции $ f $ в точке $ x_0 $ называется предел (если он существует в $\overline{\mathbb{R}}$):
 
 $$
 f'(x_0) = \lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x} = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}.
@@ -56,14 +66,12 @@ $$
 
 **Решение:**
 
-$$
-\begin{align*}
+$$\begin{align*}
 f'(1) &= \lim_{\Delta x \to 0} \frac{(1 + \Delta x)^2 - 1^2}{\Delta x} \\
 &= \lim_{\Delta x \to 0} \frac{1 + 2\Delta x + (\Delta x)^2 - 1}{\Delta x} \\
 &= \lim_{\Delta x \to 0} \frac{2\Delta x + (\Delta x)^2}{\Delta x} \\
 &= \lim_{\Delta x \to 0} \left[2 + \Delta x\right] = 2.
-\end{align*}
-$$
+\end{align*}$$
 
 ---
 
